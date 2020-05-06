@@ -1,0 +1,15 @@
+server: amqp://guest:123456@127.0.0.1:5672
+subscribers:
+  - exchange: rpc
+    type: topic
+    routing_keys:
+      - topic1
+      - topic2
+    callbacks:
+      - url: http://demo.local/api
+        type: jsonrpc
+        method: demo/getNotified
+        secret: YOURSECRET
+      - url: http://demo.local/demo/get-notified
+        type: rest
+        secret: YOURSECRET

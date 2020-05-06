@@ -1,0 +1,23 @@
+{
+  "name": "debade-trigger-bs",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "rm -rf ./dist/* && tsc --removeComments"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "cross-fetch": "^3.0.4",
+    "minimist": "^1.2.5",
+    "yaml": "^1.9.2"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.5.13",
+    "@types/minimist": "^1.2.0",
+    "@types/node": "12.12.38",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  }
+}
