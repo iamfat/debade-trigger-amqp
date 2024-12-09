@@ -12,7 +12,7 @@
     "@genee/json-rpc": "^1.10.4",
     "amqplib": "^0.10.4",
     "minimist": "^1.2.8",
-    "nanoid": "^5.0.7",
+    "nanoid": "^5.0.9",
     "pino": "^9.3.2",
     "yaml": "^2.5.0"
   },
